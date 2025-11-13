@@ -17,7 +17,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.io.IOException;
 
-import it.andrea.digcomp.utils.PasswordAuthentication;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -34,29 +33,29 @@ public class MainActivity extends AppCompatActivity {
     private TextView errorMessage;
     private OkHttpClient client = new OkHttpClient();
     private SharedPreferences sharedPreferences;
-    private PasswordAuthentication auth;
     private String hashedPassword;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         sharedPreferences = getSharedPreferences("sessions", MODE_PRIVATE);
 
-        auth = new PasswordAuthentication(30);
-        errorMessage = findViewById(R.id.errorMsg);
-        loginButton = findViewById(R.id.accedibtn);
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.passwd);
 
         Intent successIntent = new Intent(MainActivity.this, HomeActivity.class);
         String session = sharedPreferences.getString("sessionid", null);
         if(session != null) {
             startActivity(successIntent);
         }
+
+        errorMessage = findViewById(R.id.errorMsg);
+        loginButton = findViewById(R.id.accedibtn);
+        email = findViewById(R.id.email);
+        password = findViewById(R.id.passwd);
 
         loginButton.setOnClickListener(v -> {
             String emailText = email.getText().toString().trim();
