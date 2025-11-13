@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#4B4949</color>
+    <color name="text_gray">#8A8A8A</color>
+    <color name="login">#00DEFF</color>
+    <color name="gradient1">#009fe3</color>
+    <color name="gradient2">#AB6DED</color>
+    <color name="viola">#EC79FF</color>
+    <color name="celeste">#5D9BF6</color>
+</resources>

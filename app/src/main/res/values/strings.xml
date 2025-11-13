@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DigComp</string>
+    <string name="impariamo_assieme">Impariamo Assieme.</string>
+    <string name="entra_nella_community">Entra Nella Community.</string>
+    <string name="password_dimenticata">Password dimenticata?</string>
+    <string name="non_hai_un_account">Non Hai un Account?</string>
+    <string name="accedi">Accedi</string>
+    <string name="passwd_hint">***********</string>
+    <string name="email_hint">io@esempio.it</string>
+    <string name="accedi_title">Accedi</string>
+    <string name="err_interno">Errore Interno, riprova più tardi.</string>
+</resources>
