@@ -42,12 +42,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
                 int level = item.getInt("level");
                 holder.title.setText("Esito Esame");
                 holder.description.setText("Hai superato l'esame col livello " + level + "\n" + formattedDate);
-                holder.image.setImageResource(R.mipmap.ic_launcher_foreground); // Puoi usare un'icona diversa per gli esami
+                holder.image.setImageResource(R.mipmap.ic_launcher_foreground);
             } else if (type.equals("lesson")) {
                 int lezione = item.getInt("lezione");
                 holder.title.setText("Esito Lezione");
                 holder.description.setText("Hai completato la lezione " + lezione + "\n" + formattedDate);
-                holder.image.setImageResource(R.mipmap.ic_launcher_foreground); // Puoi usare un'icona diversa per le lezioni
+                holder.image.setImageResource(R.mipmap.ic_launcher_foreground);
             }
         } catch (Exception e) {
             e.printStackTrace();

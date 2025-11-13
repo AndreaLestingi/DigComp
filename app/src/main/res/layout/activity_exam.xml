@@ -5,9 +5,66 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeActivity"
-        android:id="@+id/HomeActivity"
+        tools:context=".ExamActivity"
+        android:id="@+id/examactivity"
         android:background="@drawable/gradient">
 
+    <TextView
+            android:id="@+id/question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text=" "
+            android:textStyle="bold"
+            android:fontFamily="@font/formal"
+            android:textSize="25sp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingTop="25sp">
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option1"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option2"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option3"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option4"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

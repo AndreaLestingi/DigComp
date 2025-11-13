@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onResponse(Call call, Response response) throws IOException {
-                        String responseBody = response.body().string(); // Leggi la risposta come stringa
+                        String responseBody = response.body().string();
 
                         runOnUiThread(() -> {
                             try {
